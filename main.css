@@ -1,0 +1,53 @@
+h1 {color: green};
+
+
+
+ul {
+    list-style-type: square;
+  }
+
+#mangoPictures {
+    display: flexbox;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Adjust the number of columns as needed */
+    grid-gap: 10px; /* Adjust the gap between grid items as needed */
+  }
+
+
+
+  #mangoPictures {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+    grid-gap: 20px; /* Gap between grid cells */
+  }
+  
+  #mangoPictures > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #mangoPictures img {
+    width: 200px;
+    height: 200px;
+  }
+  
+  #mangoTree {
+    grid-column: 1 / span 1; /* Occupies the first column */
+  }
+  
+  #mangoRipe {
+    grid-column: 2 / span 1; /* Occupies the second column */
+  }
+  
+  #mangoSliced {
+    grid-column: 1 / span 2; /* Occupies both columns */
+  }
+  
+  #mangoPictures p {
+    text-align: center; /* Center align the text */
+  }
